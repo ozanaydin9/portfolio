@@ -13,7 +13,7 @@
 .contentdiv1 {
 
     position: relative;
-    height: 95vh;
+    height: 90vh;
     background-image: url('pp.jpg');
     object-fit: cover;
     background-size: cover;
@@ -23,7 +23,7 @@
 .contentdiv2 {
 
     position: relative;
-    height: 95vh;
+    height: 90vh;
     background-image: url('pp.jpg');
     object-fit: cover;
     background-size: cover;
@@ -36,6 +36,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 10vh;
     text-align: center;
     font-family: 'courier new', monospace;
     font-style: normal;
@@ -51,8 +52,13 @@
 
 .buttons {
 
-    position: relative;
-    top: 70%;
+    position: absolute;
+    bottom:0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
 
 }
 
@@ -70,6 +76,8 @@
 #cssDisplay {
 
     color: #FFFFFF;
+    position: relative;
+    top: 10vh;
 
     font-family: 'courier new', monospace;
     font-style: normal;
@@ -86,7 +94,7 @@
 
     color: #FFFFFF;
     position: relative;
-    top: -25px;
+    top: 10vh;
     font-family: 'courier new', monospace;
     font-style: normal;
     font-weight: lighter;

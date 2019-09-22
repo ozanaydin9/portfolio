@@ -26,11 +26,12 @@ class About extends React.Component{
 
 
             <Layout className="layout">
-                <Header selected="about"/>
+
 
                 <Content>
 
                     <div className="contentdiv2">
+                        <Header selected="about"/>
                         <bg className="buttons">
 
                             <Tooltip title="github.com/ozanaydin9">
@@ -56,8 +57,8 @@ class About extends React.Component{
                             <Button onClick={() => window.open(Pdf)} style={{ width:70, height:70, margin:5 }} type="link" ghost size="large" shape="circle"> {iconFilePdf} </Button>
                         </p>
 
-                            <Tooltip placement="bottom" title="ozanaydin9@gmail.com">
-                                <Button onClick={() => window.open( "mailto:ozanaydin9@gmail.com")}style={{ width:50, height:50, margin:5 }} type="link" ghost size="large" shape="circle"> {iconMail} </Button>
+                            <Tooltip placement="bottom"  title="ozanaydin9@gmail.com">
+                                <Button onClick={() => window.open( "mailto:ozanaydin9@gmail.com")} style={{position:'relative', top:'20vh', width:50, height:50, margin:5 }} type="link" ghost size="large" shape="circle"> {iconMail} </Button>
                             </Tooltip>
                         
 
