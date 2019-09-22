@@ -1,0 +1,118 @@
+/*
+.main{ width:100px; height:100px;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}*/
+/*style= {{position:"relative", height: "85vh",background: '#fff', padding: 24}}*/
+/*<div style={{width: 40, position:"absolute", bottom:"0", background: '#fff', padding: 10}}>
+
+                                                                                          </div>*/
+.contentdiv1 {
+
+    position: relative;
+    height: 95vh;
+    background-image: url('pp.jpg');
+    object-fit: cover;
+    background-size: cover;
+    text-align: center;
+
+}
+.contentdiv2 {
+
+    position: relative;
+    height: 95vh;
+    background-image: url('pp.jpg');
+    object-fit: cover;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'courier new', monospace;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: none;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+
+
+}
+
+.buttons {
+
+    position: relative;
+    top: 70%;
+
+}
+
+.text {
+    display: block;
+    bottom: 0;
+    font-family: Verdana;
+    font-size: 120px;
+    color: #0059dd;
+    line-height: 100px;
+    text-align: center;
+    top: 20%;
+}
+
+#cssDisplay {
+
+    color: #FFFFFF;
+
+    font-family: 'courier new', monospace;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    font-variant: small-caps;
+    letter-spacing: 14px;
+}
+
+#cssDisplayResume {
+
+    color: #FFFFFF;
+    position: relative;
+    top: -25px;
+    font-family: 'courier new', monospace;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    font-variant: small-caps;
+    letter-spacing: 10px;
+}
+
+#cssDisplayMail {
+
+    color: #FFFFFF;
+    position: relative;
+    top: 5px;
+    font-family: 'courier new', monospace;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    font-variant: small-caps;
+    letter-spacing: 10px;
+}
+/*style={{position:"absolute", bottom:"0", padding: 5}}> https://wallpapershome.com/images/pages/pic_h/16431.jpg*/
+/*
+style={{ position:"fixed", marginBottom:0px, height:"5vh",textAlign: 'center' }}*/
