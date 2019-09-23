@@ -16,12 +16,12 @@ class MainPage extends Component{
 
     render(){
 
-        const iconGithub = <Icon type="github" style={{ fontSize: '45px'}} />;
-        const iconLinkedin = <Icon type="linkedin" style={{ fontSize: '45px'}} />;
-        const iconInstagram = <Icon type="instagram" style={{ fontSize: '45px'}} />;
-        const iconTwitter = <Icon type="twitter" style={{ fontSize: '45px'}} />;
-        const iconYoutube = <Icon type="youtube" style={{ fontSize: '45px'}} />;
-        const iconFacebook = <Icon type="facebook" style={{ fontSize: '45px'}} />;
+        const iconGithub = <Icon type="github" style={{ fontSize: '44px'}} />;
+        const iconLinkedin = <Icon type="linkedin" style={{ fontSize: '44px'}} />;
+        const iconInstagram = <Icon type="instagram" style={{ fontSize: '44px'}} />;
+        const iconTwitter = <Icon type="twitter" style={{ fontSize: '44px'}} />;
+        const iconYoutube = <Icon type="youtube" style={{ fontSize: '44px'}} />;
+        const iconFacebook = <Icon type="facebook" style={{ fontSize: '44px'}} />;
 
 
         return (
