@@ -1,9 +1,10 @@
 {
-  "name": "instasell",
+  "name": "mywebpage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "antd": "^3.23.2",
+    "bootstrap": "^4.4.1",
     "rc-texty": "^0.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

@@ -7,6 +7,7 @@ import 'antd/dist/antd.css';
 import 'rc-texty/assets/index.css';
 import * as serviceWorker from './serviceWorker';
 import About from "./components/about/About";
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 

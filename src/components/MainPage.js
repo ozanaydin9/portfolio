@@ -50,7 +50,7 @@ class MainPage extends Component{
                                 <Button onClick={() => window.open( 'http://www.facebook.com/ozanaydin9')} style={{ width:60, height:60, margin:50 }} type="link" ghost size="large" shape="circle"> {iconFacebook} </Button>
                             </Tooltip>
                         </bg>
-                        <p id="cssDisplay">Ozan Aydın</p>
+                        <p className="cssDisplay d-none d-sm-block">Ozan Aydın</p>
 
                     </div>
 

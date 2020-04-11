@@ -56,6 +56,7 @@
     bottom:0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 7vh;
     left: 0;
     right: 0;
 
@@ -73,7 +74,7 @@
     top: 20%;
 }
 
-#cssDisplay {
+.cssDisplay {
 
     color: #FFFFFF;
     position: relative;
