@@ -58,7 +58,7 @@ class About extends React.Component{
                         </p>
 
                             <Tooltip placement="bottom"  title="ozanaydin9@gmail.com">
-                                <Button onClick={() => window.open( "mailto:ozanaydin9@gmail.com")} style={{position:'relative', top:'42vh', width:70, height:70, margin:5 }} type="link" ghost size="large" shape="circle"> {iconMail} </Button>
+                                <Button onClick={() => window.open( "mailto:ozanaydin9@gmail.com")} style={{position:'relative', top:'35vh', width:70, height:70, margin:5 }} type="link" ghost size="large" shape="circle"> {iconMail} </Button>
                             </Tooltip>
 
 
