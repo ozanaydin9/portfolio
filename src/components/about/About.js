@@ -53,12 +53,12 @@ class About extends React.Component{
                                 <Button onClick={() => window.open( 'http://www.facebook.com/ozanaydin9')} style={{ width:60, height:60, margin:50 }} type="link" ghost size="large" shape="circle"> {iconFacebook} </Button>
                             </Tooltip>
                         </bg>*/}
-                        <p id="cssDisplayResume"> Resume <br/>
+                        <p id="cssDisplayResume"> &nbsp;Resume <br/>
                             <Button onClick={() => window.open(Pdf)} style={{ width:80, height:80, margin:10}} type="link" ghost size="large" shape="circle"> {iconFilePdf} </Button>
                         </p>
 
                             <Tooltip placement="bottom"  title="ozanaydin9@gmail.com">
-                                <Button onClick={() => window.open( "mailto:ozanaydin9@gmail.com")} style={{position:'relative', top:'35vh', width:70, height:70, margin:5 }} type="link" ghost size="large" shape="circle"> {iconMail} </Button>
+                                <Button onClick={() => window.open( "mailto:ozanaydin9@gmail.com")} style={{position:'relative', top:'32vh', width:70, height:70, margin:5 }} type="link" ghost size="large" shape="circle"> {iconMail} </Button>
                             </Tooltip>
 
 
