@@ -30,9 +30,9 @@ class About extends React.Component{
 
                 <Content>
 
-                    <div className="contentdiv2">
+                    <div className="contentdiv1">
                         <Header selected="about"/>
-                        <bg className="buttons">
+                        {/*<bg className="buttons">
 
                             <Tooltip title="github.com/ozanaydin9">
                                 <Button onClick={() => window.open( 'http://www.github.com/ozanaydin9')} style={{ width:60, height:60, margin:50 }} type="link" ghost size="large" shape="circle" >{iconGithub}</Button>
@@ -52,21 +52,21 @@ class About extends React.Component{
                             <Tooltip title="facebook.com/ozanaydin9">
                                 <Button onClick={() => window.open( 'http://www.facebook.com/ozanaydin9')} style={{ width:60, height:60, margin:50 }} type="link" ghost size="large" shape="circle"> {iconFacebook} </Button>
                             </Tooltip>
-                        </bg>
-                        <p id={"cssDisplayResume"} > &nbsp;Resume <br/>
-                            <Button onClick={() => window.open(Pdf)} style={{ width:70, height:70, margin:5 }} type="link" ghost size="large" shape="circle"> {iconFilePdf} </Button>
+                        </bg>*/}
+                        <p id="cssDisplayResume"> Resume <br/>
+                            <Button onClick={() => window.open(Pdf)} style={{ width:80, height:80, margin:10}} type="link" ghost size="large" shape="circle"> {iconFilePdf} </Button>
                         </p>
 
                             <Tooltip placement="bottom"  title="ozanaydin9@gmail.com">
-                                <Button onClick={() => window.open( "mailto:ozanaydin9@gmail.com")} style={{position:'relative', top:'20vh', width:50, height:50, margin:5 }} type="link" ghost size="large" shape="circle"> {iconMail} </Button>
+                                <Button onClick={() => window.open( "mailto:ozanaydin9@gmail.com")} style={{position:'relative', top:'42vh', width:70, height:70, margin:5 }} type="link" ghost size="large" shape="circle"> {iconMail} </Button>
                             </Tooltip>
-                        
+
 
                     </div>
 
                 </Content>
 
-                <Footer style={{backgroundColor:'#AF5C7D' }} className="footer">Ozan Aydın ©2019</Footer>
+                <Footer style={{backgroundColor:'#1890FF' }} className="footer">Ozan Aydın ©2019</Footer>
             </Layout>
 
         )

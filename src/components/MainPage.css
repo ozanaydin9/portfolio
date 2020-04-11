@@ -11,10 +11,10 @@
 
                                                                                           </div>*/
 .contentdiv1 {
-
+    background-position: center;
     position: relative;
     height: 90vh;
-    background-image: url('pp.jpg');
+    background-image: url('bg.jpg');
     object-fit: cover;
     background-size: cover;
     text-align: center;
@@ -78,7 +78,7 @@
 
     color: #FFFFFF;
     position: relative;
-    top: 10vh;
+    top: 5vh;
 
     font-family: 'courier new', monospace;
     font-style: normal;
@@ -95,7 +95,7 @@
 
     color: #FFFFFF;
     position: relative;
-    top: 10vh;
+    top: 5vh;
     font-family: 'courier new', monospace;
     font-style: normal;
     font-weight: lighter;
@@ -121,6 +121,9 @@
     text-transform: none;
     font-variant: small-caps;
     letter-spacing: 10px;
+}
+.ant-layout-footer{
+    font-size: 20px !important;
 }
 /*style={{position:"absolute", bottom:"0", padding: 5}}> https://wallpapershome.com/images/pages/pic_h/16431.jpg*/
 /*

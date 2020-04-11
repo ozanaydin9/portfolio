@@ -55,7 +55,7 @@ class MainPage extends Component{
                     </div>
 
                 </Content>
-                <Footer style={{backgroundColor:'#AF5C7D'}} className="footer">Ozan Aydın ©2019</Footer>
+                <Footer style={{backgroundColor:'#1890FF'}} className="footer">Ozan Aydın ©2020</Footer>
             </Layout>
 
         );
