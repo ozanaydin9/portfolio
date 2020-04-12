@@ -66,7 +66,7 @@ class About extends React.Component{
 
                 </Content>
 
-                <Footer style={{backgroundColor:'#1890FF' }} className="footer">Ozan Aydın ©2019</Footer>
+                <Footer style={{backgroundColor:'#605656'}} className="footer"><span className="footertext"> Ozan Aydın ©2020</span></Footer>
             </Layout>
 
         )

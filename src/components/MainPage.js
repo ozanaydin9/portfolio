@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Header from "./header/HeaderC";
 import './MainPage.css';
-import {Icon, Tooltip} from 'antd';
+import {Divider, Icon, Tooltip} from 'antd';
 import { Button } from 'antd';
 import { Layout } from 'antd';
 
@@ -28,6 +28,7 @@ class MainPage extends Component{
             <Layout className="layout">
 
                 <Content>
+
                     <div className="contentdiv1">
                         <Header selected="home"/>
                         <bg className="buttons">
@@ -52,11 +53,11 @@ class MainPage extends Component{
 
                         </bg>
                         <p className="cssDisplay d-none d-sm-block">Ozan Aydın</p>
-
+                        <p className="cssDisplay2 d-none d-sm-block">Software Development Engineer</p>
                     </div>
 
                 </Content>
-                <Footer style={{backgroundColor:'#1890FF'}} className="footer">Ozan Aydın ©2020</Footer>
+                <Footer style={{backgroundColor:'#605656'}} className="footer"><span className="footertext"> Ozan Aydın ©2020</span></Footer>
             </Layout>
 
         );

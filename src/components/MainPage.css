@@ -13,8 +13,10 @@
 .contentdiv1 {
     background-position: center;
     position: relative;
-    height: 90vh;
-    background-image: url('bg.jpg');
+    height: 92vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(97,87,87,1) 100%);
+    /*background-image: url('bg.jpg');*/
     object-fit: cover;
     background-size: cover;
     text-align: center;
@@ -36,7 +38,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     text-align: center;
     font-family: 'courier new', monospace;
     font-style: normal;
@@ -79,8 +81,7 @@
     color: #FFFFFF;
     position: relative;
     top: 5vh;
-
-    font-family: 'courier new', monospace;
+    font-family: 'Jura', sans-serif;
     font-style: normal;
     font-weight: lighter;
     font-size: 50px;
@@ -90,13 +91,28 @@
     font-variant: small-caps;
     letter-spacing: 14px;
 }
+.cssDisplay2 {
+
+    color: #8E8A9C;
+    position: relative;
+    top: 3vh;
+    font-family: 'Jura', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    font-variant: small-caps;
+    letter-spacing:20px;
+}
 
 #cssDisplayResume {
 
     color: #FFFFFF;
     position: relative;
     top: 5vh;
-    font-family: 'courier new', monospace;
+    font-family: 'Jura', sans-serif;
     font-style: normal;
     font-weight: lighter;
     font-size: 30px;
@@ -125,6 +141,31 @@
 .ant-layout-footer{
     font-size: 20px !important;
 }
+
+.ant-menu-item{
+}
+
+
+.ant-menu-item.ant-menu-item-selected{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(36,5,29,1) 21%, rgba(166,187,208,1) 100%);
+}
+
+.ant-menu-item.ant-menu-item-active{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(36,5,29,1) 25%, rgba(223,238,252,1) 100%);
+
+}
+
+.footertext{
+   /* font-family: 'Dancing Script', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Jura', sans-serif;*/
+
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
 /*style={{position:"absolute", bottom:"0", padding: 5}}> https://wallpapershome.com/images/pages/pic_h/16431.jpg*/
 /*
 style={{ position:"fixed", marginBottom:0px, height:"5vh",textAlign: 'center' }}*/
