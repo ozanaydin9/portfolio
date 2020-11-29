@@ -1,0 +1,51 @@
+.main{
+    display: flex;
+    place-content: center;
+    min-height: 100%;
+    background: #0f0f0f;
+}
+
+.main2{
+    margin: auto;
+}
+
+.g{
+    margin: 300px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.g2{
+    font-size: 5vh;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1vw;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin:0;
+}
+
+.g3{
+    padding: 0;
+    font-size: 2vh;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+}
+
+.content{
+    height: 100%;
+    background: red;
+}
+
+.goIn{
+    font-size: 1vh;
+    color: white;
+    padding: 0;
+    text-align: center;
+}
+
+ :global(#tsparticles){
+     position: absolute;
+ }
