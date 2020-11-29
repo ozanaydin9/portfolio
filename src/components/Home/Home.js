@@ -8,13 +8,14 @@ import ins from  '../../ins.svg'
 import tw from  '../../tw.svg'
 import gth from  '../../gth.svg'
 import ozan from  '../../ozan.png'
+import portfolioImg from  '../../portfolio.png'
+import omdb from  '../../omdb.png'
+import cocktail from  '../../cocktail.png'
 import marketing from  '../../marketing.png'
-import {animated} from "react-spring";
+import todoMedium from  '../../todoMedium.png'
+import native from  '../../native.png'
 import Typical from "react-typical";
 import Particles from "react-particles-js";
-import { Document, Page, pdfjs } from 'react-pdf';
-import resume from '../resume.pdf'
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Home = () => {
 
@@ -31,10 +32,10 @@ const Home = () => {
                     </ul>
 
                     <ul className={styles.icons}>
-                        <li><a  href="#"><img className={styles.in} src={Lnkdn} /></a></li>
-                        <li><a href="#"><img src={ins} /></a></li>
-                        <li><a href="#"><img src={tw} /></a></li>
-                        <li><a href="#"><img src={gth} /></a></li>
+                        <li><a target="_blank" href='http://www.linkedin.com/in/ozanaydin9'><img className={styles.in} src={Lnkdn} /></a></li>
+                        <li><a target="_blank" href='http://www.instagram.com/ozanaydin9'><img src={ins} /></a></li>
+                        <li><a target="_blank" href='http://www.twitter.com/ozanjs'><img src={tw} /></a></li>
+                        <li><a target="_blank" href='http://www.github.com/ozanaydin9'><img src={gth} /></a></li>
                     </ul>
                 </div>
             </div>
@@ -120,15 +121,16 @@ const Home = () => {
                         </div>
                         <div className={styles.aboutDetailInfo}>
                             <div className={styles.aboutDetailInfoHeadText}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi. Nulla ullamcorper,
-                            ligula ac volutpat porta, ligula neque sollicitudin ante, consectetur scelerisque velit orci non quam. Donec eget semper lorem, in auctor ligula.
+                                I am in a structure that attaches importance to bilateral human relations, has a high social aspect and is aware of its responsibilities.
+                                I am fully focused on my career-oriented development.
                             </div>
                             <hr style={{background:"#454545"}}/>
                             <ul style={{paddingTop: 0, paddingBottom:10}}>
-                                <li style={{paddingLeft: 0, fontSize: 14}}><a href="">Education</a></li>
-                                <li style={{fontSize: 14}}><a href="">Experience</a></li>
+                                <li style={{paddingLeft: 0, fontSize: 14}}><a href="javascript:void(0)">Education</a></li>
+                                <li style={{fontSize: 14}}><a href="javascript:void(0)">Experience</a></li>
                             </ul>
-                            <p className={styles.aboutDetailInfoHeadText}>
+                            <p>Soon...</p>
+                           {/* <p className={styles.aboutDetailInfoHeadText}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi. Nulla ullamcorper,
                                 ligula ac volutpat porta, ligula neque sollicitudin ante, consectetur scelerisque velit orci non quam. Donec eget semper lorem, in auctor ligula.
                             </p>
@@ -143,7 +145,7 @@ const Home = () => {
                             <p className={styles.aboutDetailInfoHeadText}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi. Nulla ullamcorper,
                                 ligula ac volutpat porta, ligula neque sollicitudin ante, consectetur scelerisque velit orci non quam. Donec eget semper lorem, in auctor ligula.
-                            </p>
+                            </p>*/}
                         </div>
                     </div>
 
@@ -157,91 +159,86 @@ const Home = () => {
 
                     <div className={styles.portfolioCardWrapper}>
 
-                        <div className={styles.cardMain}>
+                        <div className={styles.cardMain} onClick={()=> window.open("https://github.com/ozanaydin9/portfolio", "_blank")}>
                             <div className={styles.cardImageArea}>
-                                <img className={styles.cardImage} src={marketing} title="Login" alt="login"/>
+                                <img className={styles.cardImage} src={portfolioImg} title="Portfolio" alt="login"/>
 
                             </div>
-                            <div className={styles.cardProductArea}>
-                                <p className={styles.cardProductAreaProductBrand}> Lorem ipsum </p>
-                                <p className={styles.cardProductAreaProductDetails}> Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi.
+                            <div className={styles.cardProductArea} onClick={()=> window.open("https://github.com/ozanaydin9/portfolio", "_blank")}>
+                                <p className={styles.cardProductAreaProductBrand}> Portfolio </p>
+                                <p className={styles.cardProductAreaProductDetails}> Something for me. Personal portfolio page, designed by me and created with ReactJs.
                                 </p>
 
                             </div>
-                            <div className={styles.cardGoToProduct}>See on Github</div>
+                            <div className={styles.cardGoToProduct} onClick={()=> window.open("https://github.com/ozanaydin9/portfolio", "_blank")}>See on Github</div>
+                        </div>
+
+                        <div className={styles.cardMain} onClick={()=> window.open("https://github.com/ozanaydin9/Cocktail", "_blank")}>
+                            <div className={styles.cardImageArea}>
+                                <img className={styles.cardImage} src={cocktail} title="Cocktail" alt="login"/>
+
+                            </div>
+                            <div className={styles.cardProductArea}>
+                                <p className={styles.cardProductAreaProductBrand}> Cocktail </p>
+                                <p className={styles.cardProductAreaProductDetails}> What do you need for a home bar? A ReactJS+Redux application which gives you some cocktail recipes.
+                                </p>
+                            </div>
+                            <div className={styles.cardGoToProduct} onClick={()=> window.open("https://github.com/ozanaydin9/Cocktail", "_blank")}>See on Github</div>
+                        </div>
+
+                        <div className={styles.cardMain} onClick={()=> window.open("https://github.com/ozanaydin9/react-redux-todo", "_blank")}>
+                            <div className={styles.cardImageArea}>
+                                <img className={styles.cardImage} src={todoMedium} title="Todo App" alt="login"/>
+
+                            </div>
+                            <div className={styles.cardProductArea}>
+                                <p className={styles.cardProductAreaProductBrand}> Todo App </p>
+                                <p className={styles.cardProductAreaProductDetails}> Design + Code. Simple Todo App.
+                                    To read full story, visit <a style={{color:"white", textDecoration:"underline"}} target="_blank" href='https://medium.com/@ozanaydin9/todo-app-designing-with-figma-b1fbf135c410'>my medium story</a>
+                                </p>
+                            </div>
+                            <div className={styles.cardGoToProduct} onClick={()=> window.open("https://github.com/ozanaydin9/react-redux-todo", "_blank")}>See on Github</div>
+                        </div>
+
+
+                        <div className={styles.cardMain} onClick={()=> window.open("https://github.com/ozanaydin9/OMDB-MovieApplication", "_blank")}>
+                            <div className={styles.cardImageArea}>
+                                <img className={styles.cardImage} src={omdb} title="OMDB Movies" alt="login"/>
+
+                            </div>
+                            <div className={styles.cardProductArea}>
+                                <p className={styles.cardProductAreaProductBrand}> OMDB Movies </p>
+                                <p className={styles.cardProductAreaProductDetails}> Are you looking for movies? Do you need some information about movies? A ReactJS+Redux application which is about movies.
+                                </p>
+                            </div>
+                            <div className={styles.cardGoToProduct} onClick={()=> window.open("https://github.com/ozanaydin9/OMDB-MovieApplication", "_blank")}>See on Github</div>
+                        </div>
+
+
+                        <div className={styles.cardMain} onClick={()=> window.open("https://github.com/ozanaydin9/react-marketing", "_blank")}>
+                            <div className={styles.cardImageArea}>
+                                <img className={styles.cardImage} src={marketing} title="Marketing App" alt="login"/>
+
+                            </div>
+                            <div className={styles.cardProductArea}>
+                                <p className={styles.cardProductAreaProductBrand}> Marketing </p>
+                                <p className={styles.cardProductAreaProductDetails}> A ReactJs application for marketing, designed by me. Includes Login, Signup and Product Details Page.
+                                </p>
+                            </div>
+                            <div className={styles.cardGoToProduct} onClick={()=> window.open("https://github.com/ozanaydin9/react-marketing", "_blank")}>See on Github</div>
                         </div>
 
                         <div className={styles.cardMain}>
                             <div className={styles.cardImageArea}>
-                                <img className={styles.cardImage} src={marketing} title="Login" alt="login"/>
+                                <img className={styles.cardImage} src={native} title="Find the word" alt="login"/>
 
                             </div>
                             <div className={styles.cardProductArea}>
-                                <p className={styles.cardProductAreaProductBrand}> Lorem ipsum </p>
-                                <p className={styles.cardProductAreaProductDetails}> Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi.
+                                <p className={styles.cardProductAreaProductBrand}> Find the word </p>
+                                <p className={styles.cardProductAreaProductDetails}> A React Native application about words. Choose the correct choice and gain point, like a game.
                                 </p>
                             </div>
-                            <div className={styles.cardGoToProduct}>See on Github</div>
-                        </div>
-
-                        <div className={styles.cardMain}>
-                            <div className={styles.cardImageArea}>
-                                <img className={styles.cardImage} src={marketing} title="Login" alt="login"/>
-
-                            </div>
-                            <div className={styles.cardProductArea}>
-                                <p className={styles.cardProductAreaProductBrand}> Lorem ipsum </p>
-                                <p className={styles.cardProductAreaProductDetails}> Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi.
-                                </p>
-                            </div>
-                            <div className={styles.cardGoToProduct}>See on Github</div>
-                        </div>
-
-
-                        <div className={styles.cardMain}>
-                            <div className={styles.cardImageArea}>
-                                <img className={styles.cardImage} src={marketing} title="Login" alt="login"/>
-
-                            </div>
-                            <div className={styles.cardProductArea}>
-                                <p className={styles.cardProductAreaProductBrand}> Lorem ipsum </p>
-                                <p className={styles.cardProductAreaProductDetails}> Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi.
-                                </p>
-                            </div>
-                            <div className={styles.cardGoToProduct}>See on Github</div>
-                        </div>
-
-
-                        <div className={styles.cardMain}>
-                            <div className={styles.cardImageArea}>
-                                <img className={styles.cardImage} src={marketing} title="Login" alt="login"/>
-
-                            </div>
-                            <div className={styles.cardProductArea}>
-                                <p className={styles.cardProductAreaProductBrand}> Lorem ipsum </p>
-                                <p className={styles.cardProductAreaProductDetails}> Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi.
-                                </p>
-                            </div>
-                            <div className={styles.cardGoToProduct}>See on Github</div>
-                        </div>
-
-                        <div className={styles.cardMain}>
-                            <div className={styles.cardImageArea}>
-                                <img className={styles.cardImage} src={marketing} title="Login" alt="login"/>
-
-                            </div>
-                            <div className={styles.cardProductArea}>
-                                <p className={styles.cardProductAreaProductBrand}> Lorem ipsum </p>
-                                <p className={styles.cardProductAreaProductDetails}> Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi.
-                                </p>
-                            </div>
-                            <div className={styles.cardGoToProduct}>See on Github</div>
+                            <div className={styles.cardGoToProduct} >Private on Github</div>
                         </div>
                     </div>
                 </div>
@@ -277,10 +274,10 @@ const Home = () => {
 
                         <div className={styles.contactTextIcon}>
                             <ul>
-                                <li><a  href="#"><img className={styles.in} src={Lnkdn} /></a></li>
-                                <li><a href="#"><img src={ins} /></a></li>
-                                <li><a href="#"><img src={tw} /></a></li>
-                                <li><a href="#"><img src={gth} /></a></li>
+                                <li><a target="_blank" href='http://www.linkedin.com/in/ozanaydin9'><img className={styles.in} src={Lnkdn} /></a></li>
+                                <li><a target="_blank" href='http://www.instagram.com/ozanaydin9'><img src={ins} /></a></li>
+                                <li><a target="_blank" href='http://www.twitter.com/ozanjs'><img src={tw} /></a></li>
+                                <li><a target="_blank" href='http://www.github.com/ozanaydin9'><img src={gth} /></a></li>
                             </ul>
                         </div>
                         <img src={oabig} />
