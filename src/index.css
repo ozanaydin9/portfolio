@@ -10,6 +10,7 @@ code {
 }
 
 #root{
+  min-width: 850px;
 /*  width: 1080px;
   margin: auto;*/
 }

@@ -19,11 +19,12 @@
     padding-left: 70px;
     display: flex;
     width: 100%;
+    align-items: center;
 }
 
 .footerWrapper{
     height: 70px;
-    background: black;
+    background: #0B0B0B;
     display: flex;
     width: 100%;
     place-content: center;
@@ -119,7 +120,7 @@ a:hover {
 }
 
 .aboutWrapper{
-    /*height: 950px;*/
+    min-height: 600px;
     background-color: #0B0B0B;
     position: relative;
 }
@@ -175,6 +176,16 @@ a:hover {
     text-align: center;
 }
 
+.tabActive{
+    display: block;
+    color: #707070;
+    font-size: 14px;
+}
+
+.tab{
+    display: none;
+}
+
 .contactTextIcon{
     display: flex;
     place-content: center;
@@ -184,7 +195,8 @@ a:hover {
 .aboutDetail{
     display: flex;
     flex-direction: row;
-    padding: 65px 300px 130px 300px
+    place-content: center;
+    padding: 65px 300px 130px 300px;
 }
 
 .aboutDetailImg{
@@ -200,7 +212,7 @@ a:hover {
 
 .aboutDetailInfoHeadText{
     color: #707070;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .resumeWrapper{
@@ -208,11 +220,16 @@ a:hover {
     background-color: #0B0B0B;
     position: relative;
 }
-
+.resumeDetail{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    padding: 65px 300px 130px 300px;
+}
 
 .contactWrapper{
     height: 650px;
-    background-color: #0B0B0B;
+    background-color: #000000;
     position: relative;
 }
 
@@ -341,4 +358,47 @@ a:hover {
     width: 150px;
     font-size: 12px;
 
+}
+
+.resumeContainer:hover{
+    filter: blur(2px);
+}
+.resumeContainer {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.pdfImg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.resumeOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.resumeContainer:hover .resumeOverlay {
+    opacity: 1;
+}
+
+.icon {
+    color: #F9004D;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }

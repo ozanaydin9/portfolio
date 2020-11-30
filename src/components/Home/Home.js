@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import styles from './Home.module.css';
 import GlitchClip from "react-glitch-effect/core/Clip";
 import oA from  '../../oA.svg'
+import oa from  '../../oa.png'
 import oabig from  '../../oabig.svg'
 import Lnkdn from  '../../in.svg'
 import ins from  '../../ins.svg'
@@ -11,23 +12,48 @@ import ozan from  '../../ozan.png'
 import portfolioImg from  '../../portfolio.png'
 import omdb from  '../../omdb.png'
 import cocktail from  '../../cocktail.png'
+import resumeImg from  '../../resumeImg.png'
 import marketing from  '../../marketing.png'
 import todoMedium from  '../../todoMedium.png'
 import native from  '../../native.png'
 import Typical from "react-typical";
 import Particles from "react-particles-js";
+import { Tabs } from 'antd';
+import { Icon } from 'antd';
+import savePdf from '../../savePdf.png'
+import Pdf from "../resume.pdf";
+
+const { TabPane } = Tabs;
+
 
 const Home = () => {
+
+    const [tabActive, setTabActive] = useState(1)
+
+
+    function handleTab(val){
+        setTabActive(val)
+    }
+
+/*    const [menuActive, setMenuActive] = useState(1)
+    function handleMenu(val){
+        setMenuActive(val)
+    }
+    onClick={()=>handleMenu(1)} style={{color : menuActive === 1 ? "#F9004D"  : "#FFFFFF"}}
+    onClick={()=>handleMenu(2)} style={{color : menuActive === 2 ? "#F9004D"  : "#FFFFFF"}}
+    onClick={()=>handleMenu(3)} style={{color : menuActive === 3 ? "#F9004D"  : "#FFFFFF"}}
+    onClick={()=>handleMenu(4)} style={{color : menuActive === 4 ? "#F9004D"  : "#FFFFFF"}}*/
 
     return(
         <div className={styles.main}>
             <div className={styles.header}>
                 <div className={styles.headerWrapper}>
-                    <img src={oA} />
+                    <img style={{height: 32, marginTop: 10}} src={oa} />
                     <ul>
-                        <li><a href="#home">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#resume">Resume</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
 
@@ -126,26 +152,20 @@ const Home = () => {
                             </div>
                             <hr style={{background:"#454545"}}/>
                             <ul style={{paddingTop: 0, paddingBottom:10}}>
-                                <li style={{paddingLeft: 0, fontSize: 14}}><a href="javascript:void(0)">Education</a></li>
-                                <li style={{fontSize: 14}}><a href="javascript:void(0)">Experience</a></li>
+                                <li style={{paddingLeft: 0, fontSize: 14 }}><a style={{color : tabActive === 1 ? "#F9004D"  : "#FFFFFF"}} href="javascript:void(0)" onClick={()=>handleTab(1)} >Education</a></li>
+                                <li style={{fontSize: 14}}><a style={{color : tabActive === 2 ? "#F9004D"  : "#FFFFFF"}} href="javascript:void(0)" onClick={()=>handleTab(2)} >Experience</a></li>
                             </ul>
-                            <p>Soon...</p>
-                           {/* <p className={styles.aboutDetailInfoHeadText}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi. Nulla ullamcorper,
-                                ligula ac volutpat porta, ligula neque sollicitudin ante, consectetur scelerisque velit orci non quam. Donec eget semper lorem, in auctor ligula.
-                            </p>
-                            <p className={styles.aboutDetailInfoHeadText}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi. Nulla ullamcorper,
-                                ligula ac volutpat porta, ligula neque sollicitudin ante, consectetur scelerisque velit orci non quam. Donec eget semper lorem, in auctor ligula.
-                            </p>
-                            <p className={styles.aboutDetailInfoHeadText}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi. Nulla ullamcorper,
-                                ligula ac volutpat porta, ligula neque sollicitudin ante, consectetur scelerisque velit orci non quam. Donec eget semper lorem, in auctor ligula.
-                            </p>
-                            <p className={styles.aboutDetailInfoHeadText}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nulla ex, tincidunt eu magna nec, malesuada lobortis mi. Nulla ullamcorper,
-                                ligula ac volutpat porta, ligula neque sollicitudin ante, consectetur scelerisque velit orci non quam. Donec eget semper lorem, in auctor ligula.
-                            </p>*/}
+                            <div className={tabActive === 1 ? styles.tabActive : styles.tab}>
+                                <p>Computer Engineering ~ <span style={{color :"#acacac"}}>Pamukkale University</span> Denizli-Turkey / / From 2014 to 2019</p>
+                                <p>Informatics Engineering ~ <span style={{color :"#acacac"}}>ISEC-Institute of Engineering</span> Coimbra-Portugal / / From 2017 to 2018</p>
+                                <p>School of Foreign Languages ~ <span style={{color :"#acacac"}}>Pamukkale University</span> Denizli-Turkey / / From 2013 to 2014</p>
+                                <p>High School ~ <span style={{color :"#acacac"}}>Milli Piyango Anatolian High School</span> Isparta-Turkey / / From 2008 to 2012</p>
+                            </div>
+                            <div className={tabActive === 2 ? styles.tabActive : styles.tab}>
+                                <p>Software Development Engineer ~ <span style={{color :"#acacac"}}>AloTech</span> / / Since November 2019</p>
+                                <p>Intern Engineer ~ <span style={{color :"#acacac"}}>Onpeta</span> / / From July 2017 to September 2017</p>
+                                <p>Intern Engineer ~ <span style={{color :"#acacac"}}>Onpeta</span> / / From July 2016 to September 2016</p>
+                            </div>
                         </div>
                     </div>
 
@@ -194,7 +214,7 @@ const Home = () => {
                             <div className={styles.cardProductArea}>
                                 <p className={styles.cardProductAreaProductBrand}> Todo App </p>
                                 <p className={styles.cardProductAreaProductDetails}> Design + Code. Simple Todo App.
-                                    To read full story, visit <a style={{color:"white", textDecoration:"underline"}} target="_blank" href='https://medium.com/@ozanaydin9/todo-app-designing-with-figma-b1fbf135c410'>my medium story</a>
+                                    To read full story, visit <a style={{color:"white", textDecoration:"underline", zIndex:999}} target="_blank" href='https://medium.com/@ozanaydin9/todo-app-designing-with-figma-b1fbf135c410'>my medium story</a>
                                 </p>
                             </div>
                             <div className={styles.cardGoToProduct} onClick={()=> window.open("https://github.com/ozanaydin9/react-redux-todo", "_blank")}>See on Github</div>
@@ -243,21 +263,21 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-     {/*       <div id={"resume"} className={styles.resume}>
+            <div id={"resume"} className={styles.resume}>
                 <div className={styles.resumeWrapper}>
                     <div className={styles.aboutTitle}>
                         Resume
                     </div>
-                    <div className={styles.resumePdf}>
-                        <iframe src={resume}
-                                frameBorder="0"
-                                scrolling="auto"
-                                height="600"
-                                width="850"
-                        />
+                    <div className={styles.resumeContainer}>
+                        <img className={styles.pdfImg} src={resumeImg}/>
+                        <div className={styles.resumeOverlay}>
+                            <a onClick={() => window.open(Pdf)} className={styles.icon} title="See Resume">
+                                <img className={styles.savePdf} src={savePdf}/>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>*/}
+            </div>
             <div id={"contact"} className={styles.contact}>
                 <div className={styles.contactWrapper}>
                     <div className={styles.aboutTitle}>
